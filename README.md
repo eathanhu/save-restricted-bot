@@ -124,7 +124,7 @@ pip3 install -U pyrogram tgcrypto pyromod
 <h2>Run with Screen (VPS Deployment)</h2>
 
 <h3>1) Start a screen session</h3>
-<pre><code>screen -S jambot</code></pre>
+<pre><code>screen -S savebot</code></pre>
 
 <h3>2) Export environment variables</h3>
 <pre><code>export API_ID="YOUR_API_ID"
@@ -135,13 +135,13 @@ export STRING_SESSION="YOUR_STRING_SESSION"
 </code></pre>
 
 <h3>3) Run bot</h3>
-<pre><code>python3 jam.py</code></pre>
+<pre><code>python3 main.py</code></pre>
 
 <h3>4) Detach screen</h3>
 <pre><code>Ctrl + A, then D</code></pre>
 
 <h3>5) Re-attach later</h3>
-<pre><code>screen -r jambot</code></pre>
+<pre><code>screen -r savebot</code></pre>
 
 <h3>6) List sessions</h3>
 <pre><code>screen -ls</code></pre>
@@ -152,10 +152,10 @@ export STRING_SESSION="YOUR_STRING_SESSION"
 
 <h3>1) <code>sqlite3.OperationalError: database is locked</code></h3>
 <p>Another process is using the same session file.</p>
-<pre><code>pkill -f "python3 jam.py"
+<pre><code>pkill -f "python3 main.py"
 rm -f bot_runner.session-journal bot_runner.session-wal bot_runner.session-shm
 rm -f user_runner.session-journal user_runner.session-wal user_runner.session-shm
-python3 jam.py
+python3 main.py
 </code></pre>
 
 <h3>2) <code>Peer id invalid</code> (private source)</h3>
