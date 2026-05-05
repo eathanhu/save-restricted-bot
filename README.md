@@ -111,10 +111,10 @@ STRING_SESSION=YOUR_USER_SESSION_STRING
 <pre><code>sudo apt update
 sudo apt install -y python3 python3-pip screen
 
-mkdir -p ~/jam-bot
-cd ~/jam-bot
+mkdir -p ~/save-bot
+cd ~/save-bot
 
-# place jam.py here
+# place main.py here
 
 pip3 install -U pyrogram tgcrypto pyromod
 </code></pre>
