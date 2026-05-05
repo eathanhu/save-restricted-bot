@@ -1,4 +1,4 @@
-<h1>Telegram Clone Bot (jam.py)</h1>
+<h1>Telegram Clone Bot </h1>
 
 <p>
   A private/public Telegram message cloning bot built with <b>Pyrogram</b> + <b>Pyromod</b>.
